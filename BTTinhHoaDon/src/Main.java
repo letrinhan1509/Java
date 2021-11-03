@@ -5,15 +5,18 @@ public class Main {
 		 Scanner scanner = new Scanner(System.in);
 		 
 		 try {
+			 System.out.println("	MENU");
 			 System.out.println("1. Tên loại cà phê: Trung Nguyên");
 			 System.out.println("	Giá tiền: 120.000/kg");
 			 System.out.println("2. Tên loại cà phê: Moka");
 			 System.out.println("	Giá tiền: 100.000/kg");
+			 System.out.println();
 			 
 			 System.out.print("Chọn 1 loại cà phê cần mua: ");
 			 int key = scanner.nextInt();
 			 switch (key) {
 			 case 1: {
+				 System.out.println("-----------------------------");
 				 System.out.println("Tên loại cà phê: Trung Nguyên");
 				 System.out.println("Giá tiền: 120.000/kg");
 				 System.out.println("Hoá đơn trên 500.000 được giảm giá 10%");
@@ -28,6 +31,7 @@ public class Main {
 					 double giagiam = hd.giamGia(10);
 					 System.out.println("Số tiền khuyến mãi: " + giagiam);
 					 System.out.println("Tổng tiền phải thanh toán: " + hd.giaSauKhiGiam(10));
+					 System.out.println("Cảm ơn quý khách đã tin tưởng và ủng hộ!");
 				 } catch (Exception e) {
 					 // TODO: handle exception
 					 System.out.println("Nhập sai dữ liệu!");
@@ -35,6 +39,7 @@ public class Main {
 				 break;
 			 }
 			 case 2: {
+				 System.out.println("---------------------");
 				 System.out.println("Tên loại cà phê: Moka");
 				 System.out.println("Giá tiền: 100.000/kg");
 				 
