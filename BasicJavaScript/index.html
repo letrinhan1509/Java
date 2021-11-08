@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript</title>
+</head>
+<body>
+    <script>
+        var s = "Hello JavaScript. It is easy!"
+        console.log("s: ", s);
+        var s2 = "JavaScript is ES"
+        
+        var s3 = s + s2;
+        console.log("s3: ", s3);
+
+        var s4 = s.concat(s2);
+        console.log("s4", s4);
+
+        // Search:
+        var index = s.indexOf("easy"); // Search from start to finish and returns: "-1" if not found, "index" if found
+        console.log(index);
+
+        var lastIndex = s.lastIndexOf("s");
+        console.log(lastIndex);
+
+        // 
+        var substr1 = s.substr(0,16);
+        console.log(substr1);
+
+        // Convert string -> array:
+        var arrayString = s.split(".");
+        for (let i = 0; i < arrayString.length; i++) {
+            console.log(arrayString[i]);
+        }
+
+        // Replace:
+        var sReplace = s.replace("easy", "no so difficult");
+        console.log(sReplace);
+    </script>
+</body>
+</html>
